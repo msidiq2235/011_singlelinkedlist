@@ -152,7 +152,7 @@ int main() {
 				system("cls");
 				break;
 			case 2:
-				if (; istEmpty())
+				if (listEmpty())
 				{
 					cout << "List kosong" << endl;
 					system("pause");
@@ -174,5 +174,8 @@ int main() {
 			}
 		}
 		catch (exception e)
-	}
+		{
+			cout << "Terjadi kesalahan" << endl;
+		}
+	} while (pilihan != 5);
 }
